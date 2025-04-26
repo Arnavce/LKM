@@ -1,0 +1,48 @@
+mkdir test_lkm 
+
+cd test_lkm
+
+----------------------------------------------------------------------------------
+
+ vim test_lkm.c
+( if not vim then sudo apt install vim )
+
+press --> i 
+
+write the code written in test_lkm.C
+
+press --> Esc --> :wq --> enter 
+
+--------------------------------------------------------------------------------
+
+vim Makefile 
+
+press --> i 
+
+then write what's written in make.obj
+
+press --> Esc --> :wq --> enter 
+
+------------------------------------------------------------------------------------
+
+sudo apt update 
+
+sudo apt install gcc-13 g++-13
+sudo apt install make 
+
+make 
+
+----------------------------------------------------------------------------------
+
+sudo insmod test_lkm.ko
+
+sudo dmesg
+
+# sudo dmesg -c will clear the buffer after display
+
+sudo rmmod test_lkm.ko
+
+sudo dmesg 
+
+-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
