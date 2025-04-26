@@ -1,0 +1,46 @@
+
+mkdir add_process_lkm
+
+cd add_process_lkm
+
+---------------------------------------------------------------------------------
+
+vim add_process_lkm.c
+
+press --> i
+
+# (Paste the fixed C code add_process_lkm.c)
+
+press --> Esc --> :wq --> enter 
+
+-------------------------------------------------------------------------------------
+
+vim Makefile
+
+press --> i
+
+
+# (Paste the make.obj)
+
+press --> Esc --> :wq --> enter 
+
+--------------------------------------------------------------------------------------
+
+
+make                #this compiles the make module 
+
+
+
+sudo insmod add_process_lkm.ko
+
+sudo dmesg
+
+
+
+cat /proc/add_process_lkm      #checking the proc entry
+
+sudo rmmod add_process_lkm.ko
+
+sudo dmesg 
+
+-------------------------------------------------------------------------------------
