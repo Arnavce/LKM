@@ -1,0 +1,24 @@
+mkdir netlink
+
+cd netlink
+
+vim user_space_code.c 
+
+(#write the user_space_code)
+
+vim send_user_kernel_msg.c 
+
+(#write the send_user_kernel_msg.c)
+
+vim Makefile
+
+make 
+
+gcc user_space_code.c -o user_space_code
+
+sudo insmod send_user_kernel_msg.ko
+
+sudo ./user_space_code
+
+sudo dmesg
+
