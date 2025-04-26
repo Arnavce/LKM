@@ -1,0 +1,35 @@
+
+vim server.c
+
+press --> i
+
+(# paste the server.c)
+
+press --> Esc --> :wq --> Enter
+
+---------------------------------------------------------------------------------------------
+
+
+vim client.c
+
+press --> i
+
+(# paste the client.c)
+
+press --> Esc --> :wq --> Enter
+
+----------------------------------------------------------------------------------------
+
+gcc server.c -o server
+
+gcc client.c -o client
+
+mkdir -p tmp/unix
+
+--------------------------------------------------------------------------------------
+
+./server
+
+and in different terminal
+
+./client

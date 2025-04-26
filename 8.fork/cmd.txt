@@ -1,0 +1,9 @@
+
+vim practical8.c
+
+
+gcc practical8.c -o practical8
+
+
+./practical8
+
