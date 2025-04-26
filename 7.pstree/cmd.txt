@@ -1,0 +1,21 @@
+Verify that systemd on Linux (using pstree) is the root process of all processes (will not work on containers, only on VMs or actual Linux Machines).
+
+
+sudo apt update
+
+sudo apt install psmisc
+
+
+pstree -p
+
+systemd(1)─┬─
+           ├─
+           └─
+
+           
+
+systemd(1) — PID 1 means the very first process started by the Linux kernel.
+
+All other processes (like sshd, cron, bash, etc.) are shown as children of systemd.
+
+ This proves that systemd is the root of all processes.
