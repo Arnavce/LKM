@@ -1,0 +1,37 @@
+
+vim receiver.c 
+
+
+press --> i 
+
+write the code written in receiver.C
+
+press --> Esc --> :wq --> enter 
+
+----------------------------------------------------------------------------------
+
+vim sender.c 
+
+
+press --> i 
+
+write the code written in sender.C
+
+press --> Esc --> :wq --> enter 
+
+------------------------------------------------------------------------
+
+gcc receiver.c -o receiver -lrt
+
+gcc sender.c -o sender -lrt
+
+./receiver
+
+---------------------------------------------------------------------------
+# in different terminal
+
+./sender
+
+then type a msg and press enter 
+
+
